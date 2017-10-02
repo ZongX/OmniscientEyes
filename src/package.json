@@ -3,9 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "d3": "^4.10.2",
+    "d3-geo": "^1.8.1",
+    "d3-scale": "^1.0.6",
+    "material-ui": "^0.19.2",
     "react": "^16.0.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-addons-transition-group": "^15.6.2",
+    "react-bootstrap": "^0.31.3",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14"
+    "react-intl": "^2.4.0",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.14",
+    "react-transition-group": "^2.2.1",
+    "react-webcam": "^0.2.0",
+    "redux": "^3.7.2",
+    "topojson": "^3.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
