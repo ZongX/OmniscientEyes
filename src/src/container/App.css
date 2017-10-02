@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -26,4 +27,37 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.globefade-enter {
+  opacity: 0.01;
+}
+
+.globefade-enter.globefade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.globefade-leave {
+  opacity: 1;
+}
+
+.globefade-leave.globefade-leave-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}
+
+.slideComponentIn-enter {
+  transform: translate(100%);
+}
+.slideComponentIn-enter.slideComponentIn-enter-active {
+  transform: translate(0%);
+  transition: transform 2000ms ease-in-out;
+}
+.slideComponentIn-leave {
+  transform: translate(0%);
+}
+.slideComponentIn-leave.background-leave-active {
+  transform: translate(-100%);
+  transition: transform 2000ms ease-in-out;
 }
