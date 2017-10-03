@@ -20,7 +20,7 @@ export class OmniscentEyes extends Component {
 
   setTranslation( ogText, newText ){
     this.setState( {
-      originText: ogText,
+      originalText: ogText,
       translatedText: newText,
       isTextTranslated: true,
     } );
@@ -29,8 +29,12 @@ export class OmniscentEyes extends Component {
     return (
       <div>
         <div className='omniscentEyesContainer'>
-          <CameraCaptureWrapper />
-          <UploadSectionWrapper />
+          <CameraCaptureWrapper
+            setTranslation={ this.setTranslation }
+            />
+          <UploadSectionWrapper
+            setTranslation={ this.setTranslation }
+            />
         </div>
         <ReactCSSTransitionGroup
           transitionName='slideTranslations'

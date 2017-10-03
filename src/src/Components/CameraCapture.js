@@ -4,6 +4,7 @@ import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';
 import RaisedButton from 'material-ui/RaisedButton';
 import { uploadImage } from '../GlobalFunctions.js';
+import { Sun } from './RotateSun.js';
 import './CameraCapture.css';
 
 export class CameraCaptureWrapper extends Component {
@@ -11,7 +12,7 @@ export class CameraCaptureWrapper extends Component {
   render(){
     return(
       <div className='camerawrapper'>
-        <CameraCapture />
+        <CameraCapture{ ...this.props }/>
       </div>
     );
   }
@@ -55,7 +56,7 @@ export class CameraCapture extends Component {
   }
 
   uploadPicture(){
-    uploadImage( this.state.imageUrl );
+    uploadImage( this.state.imageUrl, this.props.setTranslation );
   }
 
   render(){

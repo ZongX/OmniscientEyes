@@ -1,0 +1,32 @@
+import React, { Component } from 'react';
+import './Sun.css';
+
+export class Sun extends Component {
+
+  render() {
+    return (
+      <div>
+        <svg className="sun-icon" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 43.4 43.4" enableBackground="new 0 0 43.4 43.4">
+          <circle className="circle" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" cx="21.7" cy="21.5" r="12.6"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="21.7" y1="6.3" x2="21.7" y2="0"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="21.7" y1="43.4" x2="21.7" y2="37"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="6.3" y1="21.7" x2="0" y2="21.7"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="43.4" y1="21.7" x2="37" y2="21.7"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="10.8" y1="10.8" x2="6.4" y2="6.4"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="37" y1="37" x2="32.5" y2="32.5"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="10.8" y1="32.5" x2="6.4" y2="37"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="37" y1="6.4" x2="32.5" y2="10.8"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="15.6" y1="7.6" x2="13.2" y2="1.8"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="30.2" y1="41.6" x2="27.7" y2="35.8"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="7.6" y1="27.7" x2="1.8" y2="30.2"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="41.6" y1="13.2" x2="35.8" y2="15.6"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="7.4" y1="16" x2="1.6" y2="13.6"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="41.8" y1="29.7" x2="35.9" y2="27.4"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="16" y1="35.9" x2="13.6" y2="41.8"/>
+          <line className="ray" fill="none" stroke="#FBAC13" strokeWidth="2" strokeMiterlimit="10" x1="29.7" y1="1.6" x2="27.4" y2="7.4"/>
+        </svg>
+
+      </div>
+    );
+  }
+}

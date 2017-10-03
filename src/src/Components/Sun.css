@@ -1,0 +1,31 @@
+.sun-icon{
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+  animation: rotate 10s 0s linear infinite;
+  fill: #fd7c4f;
+  transition: all .4s;
+  position: absolute;
+
+  .ray,
+  .circle{
+    stroke: #fd7c4f;
+    transition: all .4s;
+  }
+
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50%{
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

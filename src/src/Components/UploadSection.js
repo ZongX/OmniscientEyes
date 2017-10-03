@@ -7,7 +7,7 @@ export class UploadSectionWrapper extends Component {
   render() {
     return(
       <div className='uploadWrapper'>
-        <UploadSection/>
+        <UploadSection { ...this.props }/>
       </div>
     );
   }
@@ -29,7 +29,7 @@ export class UploadSection extends Component {
       imagesArray: file,
       imageUploaded: true
     });
-    file.forEach( file => uploadImage( file ) );
+    file.forEach( file => uploadImage( file, this.props.setTranslation ) );
   }
 
 
