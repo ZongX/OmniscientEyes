@@ -9,6 +9,7 @@ export class HomePage extends Component {
   render() {
     return (
       <div id='worldmap'>
+        <h1 className='projectTitle'>OmniscentEyeZ</h1>
         <World />
         <RaisedButton
           className='TranslateButton'
