@@ -1,0 +1,7 @@
+{
+  "RESULT_TOPIC": "omnieyesTopicBucket",
+  "RESULT_BUCKET": "omnieyeztextbucket",
+  "TRANSLATE_TOPIC": "omnieyesTransTopicBucket",
+  "TRANSLATE": true,
+  "TO_LANG": ["en", "fr", "es", "ja", "ru"]
+}

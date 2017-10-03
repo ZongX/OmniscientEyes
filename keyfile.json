@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "omniscienteyez",
+  "private_key_id": "24791dba16c1f9c986dd26d208608652d126d780",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCq9D66+5W311LF\nM5VZxHePZ4bhj1kzH+6S1tWs7o8hsH2cg/D4AfGUbAijAxYdsv75lz3P1Q6U99eh\n+7JTSSOklXiKEtq+efJcmLAPArH4QAGQyyjQVSaI/VL9gPaOb/qlnMqA08ydBONA\nzjqySuRHVfUSrPfBiEwi+n+H4r5QJOfC5kxH1e0Htxk7qh9mR71qAJqz1C81cMfA\niOzNMRAANmYm72EzPRHf1KGluqyxEuJOviOG9bEPNqhN0kU+QQa8xO2ICAOE3vPR\ncUDy8JyQSwL0+5RV/31ymncD78c7WZZR5bsbTxMOc3j3O5XcgrNulDpbdYwA7Weo\n18q9k0JTAgMBAAECggEAIkSdgnvF8jkeZVtGt9zTHpLhDbvfZIklGJgp8uVLGbS4\nKTSljAFPvLG/NXX76+4igEOZ51xM9P2NYvICOAG0PFyd8gd/g6kMNRWCTS/8Hsgt\nyCmBP+mhtNoa1agRRFIcCzCXwyUxodQF/cqZJ34trkMDwj+b1laM9IIEKGgCQCwg\n9I359Q79bG8kNHKLLtzLgBMFStHgviJqbwBxwAhQSY40OxIz/+dH8U5rA3Eihn4c\n489vIt0pFI1sSyhsTuw0ud3GMEbDA6FCYqmO60k6SgIr0/TdRWdnmqNJn9iQHifW\no2e8zmnPTeKWtF2LkTQbdDuXZzROf+ZFx3Pn6T1hSQKBgQDxMXfv3S+9lqz5oQ4G\ny5vB67JbBbJkhLFw1k5ZH3rW8vI7d5tX8w7j5G44PO1a83oE5CMCjyx0TYNTZDfw\njHQvJ7Co1pRYeZQIFHjuBa3lrdTAI4AMUkW0CB9rSCPlUUsNejpRu0PU+0uEdw3A\ntId0Q/IN85n/6xAv1tcVD1QXDwKBgQC1cup2oDhFAV5Layn34LBXJJ3YhPjlrfoo\n1vVnLjoasZcRgJwO+lBwz5Ee89aneI/av4sSlKtxYIJiK/sdCHfT0ehc+RE74giR\nSAKt/gk3eXAWOsvGLDTYwFedC42GY7vu8wWc0Vk3Gr0TwjcmEiSV0X/TN8n5yvrx\nIIWVhjwAfQKBgQCyU7fwoeH1U90qZ/id75aGx0REZi7igPVMjza4UD0bhd6xNxqk\n6TF+L1uKuwlm8JOr4B0+fCsLBnBtjLCLat1QLBFCk/x0edeILdLHcW2EXoTpVpYL\nBh1BIaxRPrJDj1plaZSK72EUrIPGOdvyOcfYn4/s3spi3CJIrJizmnS64wKBgGBV\nycv/lsB0UIcEN30GizlJFJD/UFJJQ1bpgdMtROYlQYqmWLTPC2RJn8fqOB4kMWQ3\na/QKgNeqIK9UoHcypsQMXyz1g8PiZyATNnEAPg546By1TLlDgS9PN3UGzDX8v6vG\n1UUEFTTfemGCLNuGqGvulcojhZWcwgzBcosHgNXVAoGAb2zCGHScvhD6S3hpdenJ\nvcy+js2/TAF4FOMESIu/UgPcng7Yk7r7MGpAIBBYza0/5ahcVlY240nwT7no6nvP\nHw7RwgldRRCc2oDrZ3OTA1dsscm0OqOzlEIKshUfq31OGudYgWHh7u5m848Ur16p\ntMnH7KhcoxkIkhp3cz2gZrI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "omniscienteyez@omniscienteyez.iam.gserviceaccount.com",
+  "client_id": "106657777565367202809",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/omniscienteyez%40omniscienteyez.iam.gserviceaccount.com"
+}
