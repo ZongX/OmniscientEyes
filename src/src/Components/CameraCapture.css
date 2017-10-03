@@ -1,7 +1,18 @@
 .camerawrapper{
-  margin-left: 40%;
+  border-radius: 50%;
+  background-color: #FBAC13;
+  width: 30vw;
+  height: 30vw;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 
+.cameracapturecontainer {
+  margin-left: 10%;
+  width: 80%;
+  height: 80%;
+  margin-top: 10%;
+}
 .picCaptureButton{
   left: -50%;
 }

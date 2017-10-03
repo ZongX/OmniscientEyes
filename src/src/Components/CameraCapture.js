@@ -51,6 +51,7 @@ export class CameraCapture extends Component {
     this.setState( {
       imageUrl: this.webcam.getScreenshot()
     } );
+    console.log( this.webcam.getScreenshot() );
   }
 
   uploadPicture(){
@@ -63,11 +64,14 @@ export class CameraCapture extends Component {
         <div className='cameracapturecontainer'>
           <Webcam
             audio = { false }
-            height = { 350 }
-            width = { 350 }
             ref = { this.setRef }
             screenShotFormat='image/jpeg'
-            style={ { textAlign: 'center' } }
+            style={ {
+              textAlign: 'center',
+              borderRadius: '100%',
+              width: '90%',
+              height: '90%',
+            } }
           />
         </div>
         <RaisedButton

@@ -1,0 +1,4 @@
+.omniscentEyesContainer {
+  display: flex;
+  flex-direction: row;
+}
