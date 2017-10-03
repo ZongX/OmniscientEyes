@@ -1,9 +1,10 @@
 import axios from 'axios';
 
-export function uploadImage( name, url) {
-  axios.post('/images/upload',
-    url
-  )
+export function uploadImage(url) {
+  var obj = {
+    imgSrc: url
+  }
+  axios.post('http://localhost:3030/images/upload', obj)
   .then( ( response ) => {
     console.log( response )
   } )

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.16.2",
     "d3": "^4.10.2",
     "d3-geo": "^1.8.1",
     "d3-scale": "^1.0.6",
@@ -11,6 +12,7 @@
     "react-addons-css-transition-group": "^15.6.2",
     "react-addons-transition-group": "^15.6.2",
     "react-bootstrap": "^0.31.3",
+    "react-burger-menu": "^2.1.6",
     "react-dom": "^16.0.0",
     "react-intl": "^2.4.0",
     "react-redux": "^5.0.6",

@@ -11,13 +11,24 @@ const vision = Vision({
 
 const translate = Translate({
   keyFilename: './keyfile.json'
-})
+});
+
+function strip64Header(encodedb64) {
+  return encodedb64.split(';base64,').pop();
+}
 
 function extractText(encodedImgStr) {
   return new Promise((resolve, reject) => {
+    var base64Img = strip64Header(encodedImgStr);
+
+    fs.writeFile('image.png', base64Img, { encoding: 'base64' }, (err) => {
+      console.log("File created");
+    });
+
     var imageSrcObj = {
-      source: encodedImgStr
+      source: { filename: './image.png' }
     }
+
     vision.textDetection(imageSrcObj).then((results) => {
       const detections = results[0].textAnnotations;
       console.log('Text:');
@@ -51,7 +62,7 @@ function translateText(rawTextObj){
 
 router.post('/upload', (req, res, next) => {
   // Need to use Vision API to extract the text from image.
-  var encodedImgStr = req.imgSrc;
+  var encodedImgStr = req.body.imgSrc;
   // extractText(filePath).then((detections) => {
   //   var detectionsObj = {
   //     "detections": detections
