@@ -1,0 +1,15 @@
+.uploadWrapper {
+  border-radius: 50%;
+  background-color: #F5F3CE;
+  width: 30vw;
+  height: 30vw;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.boxZoneContainer {
+  margin-left: 20%;
+  width: 90%;
+  height: 90%;
+  margin-top: 10%;
+}
