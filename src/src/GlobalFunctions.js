@@ -1,13 +1,13 @@
-var request = require('..');
+import axios from 'axios';
 
-
-export function uploadImage( name, url){
-  request
-    .post(url)
-    .send( { name: 'Manny' } ) // sends a JSON post body
-    .set('X-API-Key', 'foobar')
-    .set('accept', 'json')
-    .end((err, res) => {
-      // Calling the end function will send the request
+export function uploadImage( name, url) {
+  axios.post('/images/upload',
+    url
+  )
+  .then( ( response ) => {
+    console.log( response )
+  } )
+  .catch( ( error ) => {
+    console.log( error );
   });
 }

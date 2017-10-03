@@ -3,6 +3,7 @@ import Webcam from 'react-webcam';
 import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';
 import RaisedButton from 'material-ui/RaisedButton';
+import { uploadImage } from '../GlobalFunctions.js';
 import './CameraCapture.css';
 
 export class CameraCaptureWrapper extends Component {
@@ -53,7 +54,7 @@ export class CameraCapture extends Component {
   }
 
   uploadPicture(){
-
+    uploadImage( this.state.imageUrl );
   }
 
   render(){
@@ -86,6 +87,7 @@ export class CameraCapture extends Component {
           actions={ [
             <FlatButton
               label='Upload'
+              backgroundColor='#2266BB'
               primary={ true }
               onClick={ () => {
                 this.uploadPicture();
@@ -94,6 +96,7 @@ export class CameraCapture extends Component {
             />,
             <FlatButton
               label='Cancel'
+              backgroundColor='#2266BB'
               primary={ true }
               onClick={ this.closePictureDialog }
             />,
