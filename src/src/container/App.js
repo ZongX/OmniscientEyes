@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { HomePage } from './HomePage.js';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import { push as Menu } from 'react-burger-menu';
+import { stack as Menu } from 'react-burger-menu';
 import './App.css';
 import './NavLayout.css';
 import welcomeBackground from '../images/space.jpg';
