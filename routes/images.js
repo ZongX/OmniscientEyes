@@ -17,12 +17,21 @@ function strip64Header(encodedb64) {
   return encodedb64.split(';base64,').pop();
 }
 
+function extractTextResolve(detections) {
+  if (detections.length == 0){
+    return null;
+  } else {
+    return detections;
+  }
+}
+
 function extractText(encodedImgStr) {
   return new Promise((resolve, reject) => {
     var base64Img = strip64Header(encodedImgStr);
 
     fs.writeFile('image.png', base64Img, { encoding: 'base64' }, (err) => {
-      console.log("File created");
+      if(err) console.log(err);
+      // console.log("File created");
     });
 
     var imageSrcObj = {
@@ -30,19 +39,29 @@ function extractText(encodedImgStr) {
     }
 
     vision.textDetection(imageSrcObj).then((results) => {
-      const detections = results[0].textAnnotations;
-      console.log('Text:');
+      // console.log(results[0].textAnnotations);
+      var detections = results[0].textAnnotations;
+      // console.log('Text:');
       // detections.forEach((text) => console.log(text));
+      if(detections.length == 0){
+        detections = null;
+      }
       resolve(detections);
     }).catch((err) => {
-      console.error('ERROR:', err);
-      reject(err);
+      console.error('ERROR (line 39):', err);
+      resolve(null);
     });
   });
 }
 
 function translateText(rawTextObj){
-  console.log("This is the rawTextObj", rawTextObj);
+  console.log("This is the fking rawTextObj", rawTextObj);
+  if(rawTextObj == null){
+    return {
+      "rawText": "Cannot detect text inside the image. Try again!",
+      "transText": "Cannot detect text inside the image. Try again!"
+    }
+  }
   return new Promise((resolve, reject) => {
     const target = 'en';
     translate.translate(rawTextObj[0].description, target).then((results) => {
@@ -54,7 +73,7 @@ function translateText(rawTextObj){
       }
       resolve(resObj);
     }).catch((err) => {
-      console.log("ERROR", err);
+      // console.log("ERROR", err);
       reject(err);
     });
   });
