@@ -25,10 +25,10 @@ export class UploadSection extends Component {
   }
 
   onImageDrop(file) {
-    this.setState({
+    this.setState( {
+      imageUplaoded: true,
       imagesArray: file,
-      imageUploaded: true
-    });
+    } );
     file.forEach( file => uploadImage( file, this.props.setTranslation ) );
   }
 
@@ -50,7 +50,7 @@ export class UploadSection extends Component {
         </DropZone>
 
         {this.state.imageUploaded
-          ? <img style={ { marginLeft: '-50%' } } src={this.state.imagesArray[0].preview} alt="userimage"/>
+          ? null
         : <p style={ { marginLeft: '-50%' } }>No uploaded image</p>
         }
 

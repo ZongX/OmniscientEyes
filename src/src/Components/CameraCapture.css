@@ -1,10 +1,10 @@
 .camerawrapper{
   border-radius: 50%;
   background-color: #FBAC13;
-  width: 30vw;
-  height: 30vw;
+  width: 25vw;
+  height: 25vw;
   margin-left: 15%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .cameracapturecontainer {
