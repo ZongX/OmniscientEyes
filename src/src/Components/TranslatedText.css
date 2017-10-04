@@ -1,7 +1,7 @@
 .translationsWrapper{
   display: flex;
   flex-direction: row;
-  margin-top: 10%;
+  margin-top: 5%;
   min-height: 25vh;
 }
 
